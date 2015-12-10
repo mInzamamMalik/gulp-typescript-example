@@ -1,10 +1,11 @@
-# gulp-typescript-example
+# Gulp Typescript Example
  
 
 ![alt](img/img.jpg)
 
-
+*Author: Muhammad Inzamam Malik*
 [join Inzamam Malik on Facebook](http://link)
+
 
 ###using gulp-typescript is just easy
 
@@ -20,7 +21,7 @@ it will compile your typescript file/files file without pressing any key and put
 5. its time to add a `.js` file in your ***project's Root*** named `gulpfiles.js` 
 >you name this file any name but `gulpfile.js`
 6. just fill `gulpfile.js` with this code
-```
+```javascript
 	var gulp = require('gulp');
 	var ts = require('gulp-typescript');	
 	gulp.task('compile', function () {
