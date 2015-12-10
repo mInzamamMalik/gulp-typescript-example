@@ -3,8 +3,7 @@
 
 ![alt](img/img.jpg)
 
-Author: Muhammad Inzamam Malik
-
+Author:<br/>Muhammad Inzamam Malik<br/>
 [join Inzamam Malik on Facebook](http://facebook.com/minzamammalik)
 
 ---
@@ -37,5 +36,60 @@ it will compile your typescript file/files file without pressing any key and put
 		gulp.watch('*.ts', ['compile']);
 	});
 ```
-7. now just run 
+7. now just goto cmd and type `gulp` and hit enter
+now gulp is watching your ts file and when detect changes in your `typescript` file
+instantly compile a `.js` file for you
+
+---
+
+#Bisect ***gulpfile.js*** file:
+
+its time to look at the code in slight depth
+
+1. requiring some files from `node_modules` folder
+```javascript
+	var gulp = require('gulp');
+	var ts = require('gulp-typescript');	
+```
+
+2. this is a gulp task, named `compile` which will pick `"*.ts"` files 
+compile it and then put a `index.js` file in a folder named `output`
+```javascript
+	gulp.task('compile', function () {
+		return gulp.src('*.ts')
+			.pipe(ts({
+				noImplicitAny: true,
+				out: 'index.js'
+			}))
+			.pipe(gulp.dest('output'));
+	});
+```
+>`*.ts` means any file with `.ts` extension,	
+>if output folder not exist it will be
+>created, you can change `"*.ts"` &nbsp; to &nbsp;
+>`"**/*.ts"` or `"tsFiles/*.ts"` according to your 
+>case and same thing you can do with `output` folder name
+
+3. this is also a gulp task named `default`
+when you type `gulp` on cmd and hit enter actually this
+task comes in action and firstly run another task named `compile`
+which will compile your code immediately and then start watching
+your typescript file, as it detects any change in your code 
+it compiles again and again and again :-) until you go to cmd again
+and stop watching by pressing `Ctrl
++C` 
+```javascript
+	gulp.task('default',["compile"], function() {
+		gulp.watch('*.ts', ['compile']);
+	});
+```
+
+Thank You,<br/>
+Your favorite<br/> [Muhammad Inzamam Malik](http://facebook.com/malikasinger)<br/><br/>
+
+
+
+
+
+
 
