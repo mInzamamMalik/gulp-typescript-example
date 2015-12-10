@@ -3,10 +3,11 @@
 
 ![alt](img/img.jpg)
 
-*Author: Muhammad Inzamam Malik*
-[join Inzamam Malik on Facebook](http://link)
+Author: Muhammad Inzamam Malik
 
+[join Inzamam Malik on Facebook](http://facebook.com/minzamammalik)
 
+---
 ###using gulp-typescript is just easy
 
 it will compile your typescript file/files file without pressing any key and put it in a folder of your choice :-)
