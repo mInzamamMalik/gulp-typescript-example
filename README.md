@@ -83,6 +83,10 @@ and stop watching by pressing `Ctrl
 		gulp.watch('*.ts', ['compile']);
 	});
 ```
+#about this code repository:
+
+
+this is a ready made code you can clone this and have test run
 
 Thank You,<br/>
 Your favorite<br/> [Muhammad Inzamam Malik](http://facebook.com/malikasinger)<br/><br/>
