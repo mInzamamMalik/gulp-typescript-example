@@ -12,14 +12,14 @@ Author:<br/>Muhammad Inzamam Malik<br/>
 it will compile your typescript file/files file without pressing any key and put it in a folder of your choice :-)
 
 1. just initialize a project `npm init`
-> no need of `npm init` need you already in a project
+	> no need of `npm init` need you already in a project
 2. install gulp gloablly `npm install -g gulp`
-> you will do `npm install -g gulp` only one time in your PC if you already installed it globally one time, no need to install it again even if you start new project 
+	> you will do `npm install -g gulp` only one time in your PC if you already installed it globally one time, no need to install it again even if you start new project 
 3. add gulp to your project `npm install gulp --save`
 4. add gulp-typescript to your project `npm install glp-typescript`
-> you will do step 3 and 4 each time for each project
+	> you will do step 3 and 4 each time for each project
 5. its time to add a `.js` file in your ***project's Root*** named `gulpfiles.js` 
->you name this file any name but `gulpfile.js`
+	>you name this file any name but `gulpfile.js`
 6. just fill `gulpfile.js` with this code
 ```javascript
 	var gulp = require('gulp');
